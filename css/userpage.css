@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none;
+   border:none;
+   text-decoration: none;
+}
+
+body header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+    background: url('silver.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 50px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    box-shadow: 0px 3px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*NAGIVATION*/
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: 0.5px solid rgb(3, 85, 85);;
+}
+
+.container .content h1{
+    font-size: 50px;
+    color:rgb(251, 255, 0);
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ .container .content h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Tangerine', serif;
+    font-size: 80px;
+    margin-right: 100px;
+ }
+
+.container .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    font-size: 20px;
+    background-color: rgba(252, 0, 0, 0.8);
+    color:rgb(241, 241, 241);
+    margin:0 5px;
+    text-transform: capitalize;
+    border-radius: 10px;
+ }
+.container .content .btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(253, 2, 2);
+    transition: 0.5s;
+ }
+ body header nav h1{
+    color: crimson;
+    font-family: 'Shadows Into Light', serif;
+    font-size: 40px;
+}
+
+/*FIRST IMAGE*/
+.image1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+.image1 img{
+    border-radius: 40px;
+    box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.76);
+}
+
+/*WORKOUT ROWS*/
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0.5px solid rgb(3, 85, 85);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgba(238, 237, 237, 0.6);
+}
+.row1 .work1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row1 img{
+    height: 300px;
+    box-shadow: 0px 3px 40px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.row1 img:hover{
+    box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.76);
+    transition: 0.3s;
+}
+
+.row1 .work1 .detail1{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.row1 .work1 h1{
+    font-size: 60px;
+    margin: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.row1 .work1 .detail1 h1{
+    font-size: 80px;
+    color: rgb(250, 4, 4);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* DROPDOWN */
+.dropbtn {
+    background-color: #c2c1c1;
+    color: crimson;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content{
+    display: block;
+}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+    transition: 0.3s;
+    }
+
+/* FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .foot-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .foot-menu a{
+    font-size: 40px;
+}
